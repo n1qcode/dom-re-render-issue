@@ -1,0 +1,12 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.data-item {
+  background-color: rgba(41, 40, 40, 0.5);
+  border: 2px solid #979595;
+  box-shadow: 0 0 10px rgba(114, 109, 109, 0.5);
+  padding: 1rem;
+}
