@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./App.css";
-import HeightIssue from "./components/HeightIssue/HeightIssue";
+import IssueElem from "./components/IssueElem/IssueElem";
 import List from "./components/List/List";
 import Search from "./components/Search/Search";
 
@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="issue">
       <Search search={search} onSearch={searchHandle} />
-      <HeightIssue data={issueData} />
+      <IssueElem data={issueData} />
       <List data={someData} />
     </div>
   );

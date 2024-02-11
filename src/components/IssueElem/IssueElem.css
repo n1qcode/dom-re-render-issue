@@ -1,0 +1,30 @@
+.issue-block {
+  background-color: rgba(69, 67, 67, 0.5);
+  border: 2px solid #c9c1c1;
+  box-shadow: 0 0 10px rgba(205, 205, 205, 0.5);
+  padding: 1rem;
+  position: relative;
+}
+
+.animated-div {
+  overflow: hidden;
+  transition: height 0.5s ease;
+}
+
+.collapsed {
+  height: 50px;
+}
+
+.expanded {
+  /* The css problem is if we set 100% it's not working.
+  So we must set execlty value. */
+  height: 200px;
+}
+
+.toggle-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(84, 183, 107);
+  cursor: pointer;
+}
