@@ -1,11 +1,11 @@
 import { FC, useState } from "react";
-import "./IssueElem.css";
+import "./CssIssue.css";
 
 interface IDataIssue {
   data: string;
 }
 
-const IssueElem: FC<IDataIssue> = ({ data }) => {
+const CssIssue: FC<IDataIssue> = ({ data }) => {
   const [expanded, setExpanded] = useState(false);
 
   const toggleExpand = () => {
@@ -15,7 +15,7 @@ const IssueElem: FC<IDataIssue> = ({ data }) => {
   return data ? (
     <div className="issue-block">
       <div className={`animated-div ${expanded ? "expanded" : "collapsed"}`}>
-        <h3>The Height Issue</h3>
+        <h3>Animation Issue CSS approach</h3>
         <h4>{data}</h4>
       </div>
       <button className="toggle-btn" onClick={toggleExpand}>
@@ -25,4 +25,4 @@ const IssueElem: FC<IDataIssue> = ({ data }) => {
   ) : null;
 };
 
-export default IssueElem;
+export default CssIssue;

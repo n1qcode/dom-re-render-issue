@@ -16,8 +16,12 @@
 }
 
 .expanded {
-  /* The css problem is if we set 100% it's not working.
-  So we must set execlty value. */
+  /*    The css problem is if we set 100% height the animation is
+      not working at all.
+        So we must set exect value that is not what we really need.
+        Also there is a problem, dut to "height" is CSS trigger that
+      trigger layout recomputation.
+  */
   height: 200px;
 }
 

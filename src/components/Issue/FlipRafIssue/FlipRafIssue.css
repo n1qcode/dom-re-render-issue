@@ -1,0 +1,41 @@
+.issue-block {
+  background-color: rgba(69, 67, 67, 0.5);
+  box-shadow: 0 0 10px rgba(205, 205, 205, 0.5);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.animate-on-transforms {
+  transition: all 0.2s ease;
+}
+
+.collapsed {
+  transform: scaleY(0.4) translateY(-55%);
+}
+
+.expanded {
+  transform: scaleY(1.1) translateY(12%);
+}
+
+.info {
+  position: relative;
+  transform-origin: top;
+}
+
+.info-collapsed {
+  transform: scaleY(2.5);
+  overflow: hidden;
+}
+
+.info-expanded {
+  transform: scaleY(1);
+}
+
+.toggle-btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(84, 183, 107);
+  cursor: pointer;
+  top: 30%;
+}

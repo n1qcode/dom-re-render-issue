@@ -1,14 +1,14 @@
-import { FC } from "react";
-import { IData } from "../../App";
+import { forwardRef } from "react";
 import "./List.css";
+import { IData } from "../../hooks/useSearchImitation";
 
 interface IList {
   data?: IData[];
 }
 
-const List: FC<IList> = ({ data }) => {
+const List = forwardRef<HTMLDivElement, IList>(function List({ data }, ref) {
   return (
-    <div className="list">
+    <div className="list list-start" ref={ref}>
       {data?.length ? (
         data?.map((el) => {
           return (
@@ -23,6 +23,6 @@ const List: FC<IList> = ({ data }) => {
       )}
     </div>
   );
-};
+});
 
 export default List;

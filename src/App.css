@@ -6,6 +6,10 @@
 .issue {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 10px;
   max-width: 600px;
+}
+
+.animate-on-transforms {
+  transition: all 0.2s ease;
 }

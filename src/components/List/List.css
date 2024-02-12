@@ -10,3 +10,11 @@
   box-shadow: 0 0 10px rgba(114, 109, 109, 0.5);
   padding: 1rem;
 }
+
+.list-start {
+  transform: translateY(-0.8%);
+}
+
+.list-end {
+  transform: translateY(0.6%);
+}
